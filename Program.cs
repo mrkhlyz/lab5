@@ -64,8 +64,14 @@ namespace ConsoleApp1
 
         static void InputB(string input)
         {
-        
-        
+            try
+            {
+                B = double.Parse(input);
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("Please type in a number.");
+            }
         }
         static void Plus(double a, double b)
         {
