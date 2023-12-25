@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1
 {
-    internal class Program
+    class Program
     {
         private static double A, B;
 
@@ -52,32 +52,39 @@ namespace ConsoleApp1
 
         static void InputA(string input)
         {
-
+            try
+            {
+                A = double.Parse(input);
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("Please type in a number.");
+            }
         }
 
         static void InputB(string input)
         {
-
-
+        
+        
         }
         static void Plus(double a, double b)
         {
-
+         
         }
 
         static void Minus(double a, double b)
         {
-
+         
         }
 
         static void Multiply(double a, double b)
         {
-
+        
         }
 
         static void Divide(double a, double b)
         {
-
+        
         }
     }
 }
