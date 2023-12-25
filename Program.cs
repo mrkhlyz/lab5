@@ -90,7 +90,7 @@ namespace ConsoleApp1
 
         static void Divide(double a, double b)
         {
-        
+            Console.WriteLine(a / b);
         }
     }
 }
