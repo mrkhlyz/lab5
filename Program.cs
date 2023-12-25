@@ -52,7 +52,14 @@ namespace ConsoleApp1
 
         static void InputA(string input)
         {
-        
+            try
+            {
+                A = double.Parse(input);
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("Please type in a number.");
+            }
         }
 
         static void InputB(string input)
